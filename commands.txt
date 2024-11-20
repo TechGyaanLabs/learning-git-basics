@@ -65,3 +65,24 @@ Shows changes between the working directory and the staging area.
 git diff <branch1>..<branch2>
 Compares changes between two branches.
 
+git tag <tag-name>
+Creates a new tag for a commit.
+
+git push origin <tag-name>
+Pushes a tag to the remote repository.
+
+git tag -d <tag-name>
+Deletes a tag locally.
+
+git config --global user.name "Your Name"
+Sets your global Git username.
+
+git config --global user.email "your-email@example.com"
+Sets your global Git email.
+
+git stash
+Temporarily stores changes in the working directory.
+
+git stash apply
+Restores the stashed changes.
+
