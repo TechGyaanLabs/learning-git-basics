@@ -53,3 +53,15 @@ Fetches and merges changes from the remote repository into the current branch.
 git fetch
 Downloads changes from the remote repository without merging them.
 
+git log
+Displays the commit history.
+
+git log --oneline
+Shows a condensed version of the commit history.
+
+git diff
+Shows changes between the working directory and the staging area.
+
+git diff <branch1>..<branch2>
+Compares changes between two branches.
+
