@@ -86,3 +86,41 @@ Temporarily stores changes in the working directory.
 git stash apply
 Restores the stashed changes.
 
+Adding SSH key to github
+
+
+  Open your terminal or command prompt.
+
+  Enter the following command, replacing your_email@example.com with your GitHub email address:
+
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+
+  When prompted to specify a file to save the key, press Enter to use the default location (~/.ssh/id_ed25519).
+
+  If prompted, enter and confirm a passphrase (or leave it blank for no passphrase).
+
+ Ensure the SSH agent is running:
+
+   eval "$(ssh-agent -s)"
+
+ Add your SSH private key to the agent:
+
+    ssh-add ~/.ssh/id_ed25519
+
+
+Copy the SSH public key to your clipboard. Use the following command:
+
+    cat ~/.ssh/id_ed25519.pub | pbcopy 
+
+Windows:
+
+    clip < ~/.ssh/id_ed25519.pub
+
+Add the SSH Key to GitHub
+    Log in to your GitHub account.
+    In the top-right corner, click your profile picture, then go to Settings.
+    In the left sidebar, click SSH and GPG keys.
+    Click the New SSH key button.
+    Add a title for your key (e.g., "My Laptop SSH Key").
+    Paste the key you copied in Step 3 into the "Key" field.
+    Click Add SSH key and, if prompted, confirm your GitHub password.
