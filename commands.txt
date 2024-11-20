@@ -1,1 +1,8 @@
-Git baisc command list 
+Git basic command list 
+
+
+Git init
+Git add .
+Git commit -m "Message"
+Git log
+Git branch 
